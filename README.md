@@ -1,6 +1,22 @@
+# Task Manager Project
+
+# From the begining
+
+## Flask
+
+### Install Flask
+For GitPod I typed 
+    "pip3 install flask"
+        (However you might need "sudo")
+
+### Creating Python file
+Created app.py
+    "touch app.py"
+
+
 # Code Institute
 
-Welcome USER_NAME,
+Welcome Stephen Jackson,
 
 We have preinstalled all of the tools you need to get started.
 
