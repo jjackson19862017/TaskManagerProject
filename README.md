@@ -26,7 +26,14 @@ Created new app in Heroku and added it in the webpage not CLI
 
 "echo web: python app.py > Procfile"
 
+# Notes
+Check for order of imports and alignment of text.
 
+## MongoDB
+
+# Giving Flask Ability to connect to it
+"pip3 install flask-pymongo"
+"pip3 install dnspython"
 
 # Code Institute
 
