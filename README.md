@@ -51,6 +51,13 @@ JS to be inserted before "/body"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+## Tasks HTML
+Had to copy in the GITHUB Code, as mine for some reason didnt work. :(
+
+# Add Task Section
+Created addtask.html, and gave it basic content.
+
+
 # Code Institute
 
 Welcome Stephen Jackson,
