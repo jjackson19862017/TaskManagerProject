@@ -13,6 +13,20 @@ For GitPod I typed
 Created app.py
     "touch app.py"
 
+## Heroku
+
+# Connection
+Created new app in Heroku and added it in the webpage not CLI
+
+# Requirements file
+
+"pip3 freeze --local > requirements.txt"
+
+# Procfile
+
+"echo web: python app.py > Procfile"
+
+
 
 # Code Institute
 
