@@ -15,25 +15,32 @@ Created app.py
 
 ## Heroku
 
-# Connection
+### Connection
 Created new app in Heroku and added it in the webpage not CLI
 
-# Requirements file
+### Requirements file
 
 "pip3 freeze --local > requirements.txt"
 
-# Procfile
+### Procfile
 
 "echo web: python app.py > Procfile"
 
-# Notes
+### Notes
 Check for order of imports and alignment of text.
 
 ## MongoDB
 
-# Giving Flask Ability to connect to it
+### Giving Flask Ability to connect to it
 "pip3 install flask-pymongo"
 "pip3 install dnspython"
+
+### Notes
+Make sure the "templates" folder is in lower case otherwise it wont find the files. IE tasks.html
+
+# Generating HTML template
+Goto templates folder and type "touch base.html"
+
 
 # Code Institute
 
