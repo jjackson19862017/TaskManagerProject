@@ -66,7 +66,7 @@ Added Form functionality
 Created folder using "mkdir static"
 
 ## CSS
-
+Added some code to make the buttons smaller.
 
 # Code Institute
 
