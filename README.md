@@ -57,6 +57,10 @@ Had to copy in the GITHUB Code, as mine for some reason didnt work. :(
 # Add Task Section
 Created addtask.html, and gave it basic content.
 
+## Added Form
+Use materlize to copy across form elements.
+
+Added Form functionality
 
 # Code Institute
 
