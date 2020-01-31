@@ -62,6 +62,12 @@ Use materlize to copy across form elements.
 
 Added Form functionality
 
+# Static content
+Created folder using "mkdir static"
+
+## CSS
+
+
 # Code Institute
 
 Welcome Stephen Jackson,
