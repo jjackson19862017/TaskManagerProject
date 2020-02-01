@@ -66,7 +66,7 @@ def get_categories():
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     return render_template('editcategory.html',
-    category=mongo.db.categories.find_one({'_id: ObjectId(category_id)'}))
+    category=mongo.db.categories.find_one({'_id:' ObjectId(category_id)}))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
