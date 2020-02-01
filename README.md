@@ -68,6 +68,10 @@ Created folder using "mkdir static"
 ## CSS
 Added some code to make the buttons smaller.
 
+# Category Options
+Created categories.html, and copied the content from tasks.html.
+Modified the code to work with categories.html
+
 # Code Institute
 
 Welcome Stephen Jackson,
