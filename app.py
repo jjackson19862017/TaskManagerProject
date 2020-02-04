@@ -1,12 +1,12 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for, request
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@mycluster-kbtfd.gcp.mongodb.net/task_manager?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
@@ -20,7 +20,7 @@ def get_tasks():
 @app.route('/add_task')
 def add_task():
     return render_template('addtask.html',
-                           categories=mongo.db.categories.find())
+        categories=mongo.db.categories.find())
 
 
 @app.route('/insert_task', methods=['POST'])
@@ -61,20 +61,23 @@ def delete_task(task_id):
 @app.route('/get_categories')
 def get_categories():
     return render_template('categories.html',
-    categories=mongo.db.categories.find())
+                           categories=mongo.db.categories.find())
+                           
 
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     return render_template('editcategory.html',
-    category=mongo.db.categories.find_one({'_id': ObjectId(category_id)}))
+                           category=mongo.db.categories.find_one(
+                           {'_id': ObjectId(category_id)}))
+
 
 @app.route('/update_category/<category_id>', methods=['POST'])
 def update_category(category_id):
     mongo.db.categories.update(
         {'_id': ObjectId(category_id)},
-        {'category_name': request.form.get['category_name']}
-    )
+        {'category_name': request.form.get('category_name')})
     return redirect(url_for('get_categories'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
